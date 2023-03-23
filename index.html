@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabs</title>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <section class="section">
+      <!-- se agregaron logos  -->
+      <div class="title">
+        <img src="img/SAITA2m.png" alt="logo-saita" />
+        <div class="wi">
+          <h2>SAITA DIVING</h2>
+          <p>CLUB Y ESCUELA DE SUBMARINISMO</p>
+        </div>
+        <img src="img/FECDAS2m.png" alt="logo-fecdas" />
+      </div>
+      <!-- se agrego div y class  -->
+
+      <div class="about-center section-center">
+        <article class="about-img">
+          <img src="img/portada.jpg" alt="" />
+        </article>
+        <article class="about">
+          <!-- btn container -->
+          <div class="btn-container">
+            <button
+              class="tab-btn active"
+              data-id="history"
+              onclick="sel('history')"
+            >
+              Historia
+            </button>
+            <button class="tab-btn" data-id="vision" onclick="sel('vision')">
+              Visión
+            </button>
+            <button class="tab-btn" data-id="goals" onclick="sel('goals')">
+              Objetivos
+            </button>
+          </div>
+          <div class="about-content">
+            <!-- single item -->
+            <div class="content active" id="history">
+              <h4>Historia</h4>
+              <p>
+                El Club SAITA diving nace en el año 2012 de la voluntad de
+                varios submarinistas de la Federación Catalana de Actividades
+                Subacuáticas(FECDAS), para dar respuestas a varios colectivos en
+                las inmediaciones del Parc FORUM.
+                <br />
+                Es un club sin ánimo de lucro, por lo que los beneficios se
+                reinvierten internamente.
+                <br />
+                Desde entonces ha venido desarrollando cursos de submarinismo a
+                la vez que impulsado y participado en proyectos relacionados con
+                el medioambiente, reducción de la brecha de género, personas en
+                riesgo de exclusión social, y personas con diversidad funcional.
+              </p>
+            </div>
+            <!-- end of single item -->
+            <!-- single item -->
+            <div class="content" id="vision">
+              <h4>Visión</h4>
+              <p>
+                El Club SAITA diving desarrollará sus actividades para fomentar
+                el submarinismo entre sus socios y personas que se encuentren en
+                la ciudad de Barcelona o alrededores. Fomentará sus actividades
+                y hará partícipes a personas con diversidad funcional, y en
+                riesgo de exclusión social. Sus miembros y socios trabajarán
+                para reducir la brecha de género, fomentando especificamente la
+                participación femenina en las actividades. En sus actividades
+                velará por el respeto al medioambiente, impulsando proyectos
+                como el de retirada de basura del fondo marino, y otros
+                relacionados con la reducción de gases invernadero y generación
+                de óxigeno mediante posidonia arrojada por el mar en episodios
+                de tormentas.
+              </p>
+              <ul>
+                <li>Proyecto: retirada de basura del fondo marino</li>
+                <li>Proyecto: plantación de posidonia</li>
+                <li>Proyecto: reduce, recicla, reutiliza, repara, recupera</li>
+              </ul>
+            </div>
+            <!-- end of single item -->
+            <!-- single item -->
+            <div class="content" id="goals">
+              <h4>Objetivos</h4>
+              <p>
+                Ser un referente en la ciudad de Barcelona y alrededores.
+                <br />
+                Dar soporte a la federación FECDAS-FEDAS en aquellas actividades
+                propuestas y comunes.
+                <br />
+                Dar oportunidades a personas en riesgo de exclusión social a
+                través de la capacitación en submarinismo.
+              </p>
+            </div>
+            <!-- end of single item -->
+          </div>
+        </article>
+
+        <div class="titlegal">
+          <h2>GALERIA</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore
+            dolores doloremque dolor iste veritatis sequi nam obcaecati
+            inventore voluptates debitis aliquam aperiam odio, ratione nobis eos
+            consequatur ad, laborum quidem. Dolores, nostrum provident neque
+            voluptatem a corrupti quas odit obcaecati pariatur, laboriosam illum
+            cumque assumenda. Temporibus, aliquid delectus impedit veritatis
+            provident velit sequi quam quasi ullam non alias soluta sapiente!
+          </p>
+        </div>
+
+        <article class="about-img test">
+          <img id="galeria" src="img/buceo7.jpg" alt="" />
+          <p id="mitexto">Algunas de nuestra actividades</p>
+          <nav>
+            <ul>
+              <li>
+                <a onclick="cargarfoto(2,0)"
+                  ><div class="gal-img">
+                    <img src="img/buceo2.jpg" alt="" /></div
+                ></a>
+              </li>
+              <li>
+                <a onclick="cargarfoto(4,1)"
+                  ><div class="gal-img">
+                    <img src="img/buceo4.jpg" alt="" /></div
+                ></a>
+              </li>
+              <li>
+                <a onclick="cargarfoto(5,2)"
+                  ><div class="gal-img">
+                    <img src="img/buceo5.jpg" alt="" /></div
+                ></a>
+              </li>
+              <li>
+                <a onclick="cargarfoto(6,3)"
+                  ><div class="gal-img">
+                    <img src="img/buceo6.jpg" alt="" /></div
+                ></a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- <form action="form.php" method="post" validate>
+            <label for="Nombre">Nombre</label>
+            <input
+              type="text"
+              id="Nombre"
+              name="Nombre"
+              maxlength="20"
+              required=""
+              placeholder="Nombre"
+            />
+            <label for="Apellido">Primer Apellido</label>
+            <input
+              type="text"
+              id="Apellido"
+              name="Apellido"
+              maxlength="20"
+              required=""
+              placeholder="Primer apellido"
+            />
+            <label for="Segundo_apellido">Segundo Apellido</label>
+            <input
+              type="text"
+              id="Segundo_apellido"
+              name="Segundo_apellido"
+              maxlength="20"
+              required=""
+              placeholder="Segundo apellido"
+            />
+
+            <label for="Email">Email</label>
+            <input
+              type="email"
+              id="Email"
+              name="Email"
+              required=""
+              placeholder="name@mail"
+            />
+
+            <label for="codPostal">Código postal</label>
+            <input
+              type="text"
+              id="codPostal"
+              name="codPostal"
+              maxlength="20"
+              required=""
+              placeholder="Código postal"
+            />
+
+            <label for="Phone">Teléfono</label>
+            <input
+              type="text"
+              id="Phone"
+              name="Phone"
+              pattern="[0-9]{9}"
+              required=""
+              placeholder="000000000"
+            />
+            <div class="button">
+              <button type="submit">Quiero Bucear Ahora!</button>
+            </div>
+          </form> -->
+        </article>
+
+        <!-- javascript -->
+      </div>
+    </section>
+    <script src="js/app.js"></script>
+  </body>
+</html>
